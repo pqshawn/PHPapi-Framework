@@ -7,7 +7,7 @@
 
 
 
-## 安装说明 [![PHPapi-Framework](https://img.shields.io/badge/version-1.0-blue)](https://packagist.org/packages/ldos1/phpapi-framework)：
+## 安装说明 ：
 
     git 下载：
 
