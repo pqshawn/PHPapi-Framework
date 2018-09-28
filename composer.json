@@ -1,0 +1,31 @@
+{
+    "name": "ldos1/phpapi-framework",
+    "description": "The Api Framework Based On PHPapi",
+    "type": "BSD-2-Clause",
+    "license": "BSD 2",
+    "keywords": [
+        "php-api-framework", "api-framework", "api"
+    ],
+    "authors": [
+        {
+            "name": "Shawn Yu",
+            "email": "pqshawn@outlook.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php": ">=7.0.25",
+        "ldos/phpapi": "*",
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\":"application/app/",
+            "Ischool\\":"application/ischool/"
+        },
+        "files": [
+        ]
+    },
+    "config": {
+        "secure-http": true
+    }
+}
