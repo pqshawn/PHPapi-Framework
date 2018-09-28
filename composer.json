@@ -1,5 +1,5 @@
 {
-    "name": "ldos1/phpapi-framework",
+    "name": "ldos/phpapi-framework",
     "description": "The Api Framework Based On PHPapi",
     "type": "project",
     "license": "BSD-2-Clause",
@@ -9,7 +9,7 @@
     "authors": [
         {
             "name": "Shawn Yu",
-            "email": "adaman@sina.cn"
+            "email": "pggq@outlook.com"
         }
     ],
     "minimum-stability": "dev",
@@ -26,6 +26,6 @@
         ]
     },
     "config": {
-        "secure-http": true
+        "secure-http": false
     }
 }
