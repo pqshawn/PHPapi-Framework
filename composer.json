@@ -1,15 +1,15 @@
 {
     "name": "ldos1/phpapi-framework",
     "description": "The Api Framework Based On PHPapi",
-    "type": "BSD-2-Clause",
-    "license": "BSD 2",
+    "type": "project",
+    "license": "BSD-2-Clause",
     "keywords": [
         "php-api-framework", "api-framework", "api"
     ],
     "authors": [
         {
             "name": "Shawn Yu",
-            "email": "pqshawn@outlook.com"
+            "email": "adaman@sina.cn"
         }
     ],
     "minimum-stability": "dev",
