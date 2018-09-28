@@ -15,7 +15,7 @@
     "minimum-stability": "dev",
     "require": {
         "php": ">=7.0.25",
-        "ldos/phpapi": ">=1.0",
+        "ldos/phpapi": ">=1.0"
     },
     "autoload": {
         "psr-4": {
