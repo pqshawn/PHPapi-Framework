@@ -3,21 +3,26 @@
 [![PHPapi-Framework-version](https://img.shields.io/badge/version-1.0-blue)]()
 
 
-已经引进PHPapi的示例项目
+require PHPapi的示例项目
 
 
 
 ## 安装说明 ：
+下载PHPapi-Framework，以此为基础开发业务或者二次开发
 
-    git 下载：
+    git clone或直接下载zip包：
 
-    git clone https://github.com/pqshawn/PHPapi-Framework
+    a) git clone https://github.com/pqshawn/PHPapi-Framework
+    b) 直接下载zip包，先解压
+    c) 安装依赖执行： composer update
+    d) 配置nginx, 重启
 
     或者
 
     composer安装： 
 
-    composer create-project ldos/phpapi-framework
+    a) composer create-project ldos/phpapi-framework
+    b) 配置nginx, 重启
 
 
 
