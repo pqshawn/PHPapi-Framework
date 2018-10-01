@@ -3,7 +3,7 @@ namespace App\V1\Model;
 
 use PhpApi\Model;
 
-class Test extends Model{
+class Test extends Model {
     // 自定义设置表名
     // public $_table = 'test';
 

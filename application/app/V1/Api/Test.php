@@ -4,7 +4,16 @@ namespace App\V1\Api;
 use PhpApi\Controller;
 use App\V1\Service\Test as ServiceTest;
 
-class Test extends Controller{
+class Test extends Controller {
+
+    protected $testService = null;
+
+    /**
+     * 用户自定义前置方法
+     */
+    public function beforeUserAction() {
+        $this->testService = new ServiceTest();
+    }
 
     public function get() {
         // 用retKey字符串代替ret数字，便于阅读代码
@@ -17,7 +26,7 @@ class Test extends Controller{
     }
 
     public function set() {
-        $testService = new ServiceTest();
+        $testService = $this->testService;
 
         $data = array(
             'title'   => 'fifth test title',
@@ -28,6 +37,18 @@ class Test extends Controller{
         $ret = isset($result['rs'])? $result['rs'] : false;
         $retKeyString = $ret? 'SUCCESS' : 'FAILURE';
         return array('retKey' => $retKeyString, 'title' => $data['title'], 'content' => $data['content']);
+    }
+
+
+    public function tok() {
+        $testService = $this->testService;
+        $key = 'website';
+        $val = 'ldos.com@t='.time();
+        $testService->cache($key, $val);
+        $result = $testService->cache($key);
+
+        $retKeyString = 'SUCCESS';
+        return array('retKey' => $retKeyString, 'key' => $key, 'val' => $result);
     }
 
     

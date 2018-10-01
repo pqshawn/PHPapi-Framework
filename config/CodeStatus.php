@@ -23,6 +23,8 @@ return array(
         'FAILURE' => 10001, 
         'NO_METHOD' => 10002,
         'INVALID_ARGUMENT' => 10003,
+        'ILLEGAL_TOKEN' => 10004,
+        'EXPIRE_TOKE'   => 10005,
     ),
     'Ischool' => array(
         'SUCCESS' => 20000,

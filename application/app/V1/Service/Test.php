@@ -2,12 +2,14 @@
 namespace App\V1\Service;
 
 use PhpApi\Service;
+use PhpApi\Cache;
 use App\V1\Model\Test as ModelTest;
 
-class Test extends Service{
+class Test extends Service {
+    protected $cacheObj = null;
 
     public function __construct() {
-		
+		$this->cacheObj = new Cache();
     }
     
     /**
@@ -19,5 +21,14 @@ class Test extends Service{
 		$result = $testModel->add($data);
 		return $result;
 	}
+
+    public function cache($key, $val = '', $expire = 3600) {
+        if ($val) {
+            $res = $this->cacheObj->cache->set($key, $val, $expire);
+        } else {
+            $res = $this->cacheObj->cache->get($key);
+        }
+        return $res;
+    }
 
 }
