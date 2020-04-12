@@ -15,5 +15,7 @@
     'ERROR'   => '错误',
     'NO_METHOD' => '找不到类或方法',
     'INVALID_ARGUMENT' => '无效参数',
+    'SYSTEM_WARNING_FOR_PARAMS' => '客户端参数不符合系统要求',
+    'CUSTOMER_WARNING_FOR_PARAMS' => '客户端参数不符合规则要求',
 
  );

@@ -22,9 +22,11 @@ return array(
         'SUCCESS' => 10000, // app项目，各端通用，成功
         'FAILURE' => 10001, 
         'NO_METHOD' => 10002,
-        'INVALID_ARGUMENT' => 10003,
+        'INVALID_ARGUMENT' => 10003, // 通用参数错误
         'ILLEGAL_TOKEN' => 10004,
         'EXPIRE_TOKE'   => 10005,
+        'SYSTEM_WARNING_FOR_PARAMS' => 10006,   // 前台传参错误: 超出系统限制
+        'CUSTOMER_WARNING_FOR_PARAMS' => 10007, // 前台传参错误: 不符合规则
     ),
     'Ischool' => array(
         'SUCCESS' => 20000,
