@@ -17,3 +17,5 @@ $kernel::config(ROOT . 'config', 'App');
 
 // 分发
 $kernel::dispatch();
+
+

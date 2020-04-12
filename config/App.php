@@ -25,7 +25,7 @@ return array(
     // 缓存 配置
     'Cache'  =>  array(),
     // 全局，请求和响应内容类型: json，crypto-json （http表现为application/json，application/crypto-json）
-    'ContentType' => 'crypto-json',
+    'ContentType' => 'json',
     // 请求和响应单独设置
     // 'RequestContentType' => 'application/json',
     // 'ResponseContentType' => 'application/json',
